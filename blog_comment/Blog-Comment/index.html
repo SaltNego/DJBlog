@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<title>KompleteWoman Blog</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="Project2.css">
+  <link href="normalize.css" rel="stylesheet">
+</head>
+<body ng-controller="main">
+  <header>
+    <img src="logo.jpg">
+    <h1>KompleteWoman</h1>
+    <p class="slogan">....When God, Purpose and Passion meet....</p>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="http://kompletewoman.com/2014/12/09/interested-in-being-a-female-software-developer-earn-and-learn/" target ="_blank">The Hub</a></li>
+      <li><a href="#">Reviews</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Andela all female bootcamp</h2>
+    <p>Just in case you haven't heard of <a href = http://andela.co>Andela</a>, it's a global talent accelerator that produces world-class developers and connects them with top employers. This time around, they have decided to encourage the female criticism in the aspect of software devlopment and train more female to become an Andela <a href = http://women.andela.co> fellow </a>.</p>
+    <button ng-click="click()">Click to view</button>
+    <hr>
+  </article>
+
+
+  <ul ng-repeat="comment in arrayComments">
+    <li>{{comment}}</li>
+  </ul>
+
+Comments:
+<textarea rows="5" cols="80" ng-model="comment"> </textarea>
+<button ng-click="add()">Click to Add</button>
+<script src="angular.js"></script>
+<script src="controller.js"></script>
+<!-- <script src="js/service.js"></script> -->
+ <!--  <script type ="text/javascript" src="Project2.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,46 @@
+    header {
+      text-align: center;
+      background: url("bg.jpg");
+      background-size: cover;
+      color:#b59410;
+    }
+    a {
+      color: #b59410;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+   /* ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }*/
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: grey;
+      font-size: 25px;
+    }
+    .slogan {
+      color: black;
+    }
+    @media (max-width: 500px) {
+    h1 {
+        padding: 5px;
+    }
+    li {
+        padding: 5px;
+        display: block;
+      }
+    }
