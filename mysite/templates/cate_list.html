@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block mainbody %}
+<div class="container">
+
+
+
+<main role="main" class="homepage">
+
+  
+<h1 class="site-title">
+Salts'</br>programming blog
+</h1>
+
+<div class="hero-logo">
+  <img src="/static/base16-eighties.svg">
+</div>
+
+<div style="text-align: center;">
+  Programming theory, web, Python , php
+</div>
+
+
+  <h1 class="headline">Recent Posts</h1>
+
+  <div class="article-list">
+    
+{% for blog in blogs %}     
+    <article class="list-item" itemscope itemtype="http://schema.org/Blog">
+      <h2 class="headline" itemprop="headline"><a href="{% url 'blog_get_detail' blog.id %}">{{ blog.title }}</a></h2>
+      <div class="meta">
+
+        <span class="key">published on</span>
+        <span class="val"><time itemprop="datePublished" datetime="2017-11-21">{{ blog.created |date:"Y-m-d H:i" }}</time></span>
+
+      </div>
+      <section class="summary">
+        <p>{{ blog.content | truncatechars:100 }}</p>
+
+    <p></p>  <a href="{% url 'blog_get_detail' blog.id %}">Read More...</a>
+      </section>
+    </article>
+{% endfor %}
+    
+  
+  </div>
+
+</main>
+
+
+</div>
+{% endblock %}

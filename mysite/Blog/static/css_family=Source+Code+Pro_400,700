@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(https://fonts.gstatic.com/s/sourcecodepro/v7/mrl8jkM18OlOQN8JLgasD9zbP97U9sKh0jjxbPbfOKg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Code Pro Bold'), local('SourceCodePro-Bold'), url(https://fonts.gstatic.com/s/sourcecodepro/v7/leqv3v-yTsJNC7nFznSMqbsbIrGiHa6JIepkyt5c0A0.ttf) format('truetype');
+}
